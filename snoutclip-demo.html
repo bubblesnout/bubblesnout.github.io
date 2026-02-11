@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnoutClip Theme Demo</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- SnoutClip Theme -->
+    <link href="snoutclip-theme.css" rel="stylesheet">
+    
+    <style>
+        /* Demo-specific styles */
+        .demo-section {
+            margin-bottom: 4rem;
+        }
+        .demo-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--sc-border);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <img src="snoutclip-logo.png" alt="SnoutClip" style="height: 40px;">
+                <span>SnoutClip</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clips">Clips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#games">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile">Profile</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <button class="btn btn-sm btn-ghost" onclick="toggleTheme()">
+                            <span id="theme-icon">🌙</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container mt-5">
+        <div class="hero-section">
+            <h1 class="hero-title">Share Your Epic Moments</h1>
+            <p class="lead text-secondary mb-4">Upload, share, and discover the best gaming clips from around the world</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <button class="btn btn-primary btn-lg px-4">Upload Clip</button>
+                <button class="btn btn-accent btn-lg px-4">Explore</button>
+                <button class="btn btn-outline-primary btn-lg px-4">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <!-- Stats Section -->
+        <div class="demo-section">
+            <h2 class="demo-header">Stats Overview</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card">
+                        <div class="stat-value">1.2M</div>
+                        <div class="stat-label">Total Clips</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card">
+                        <div class="stat-value">450K</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card">
+                        <div class="stat-value">89</div>
+                        <div class="stat-label">Supported Games</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="stat-card">
+                        <div class="stat-value">24/7</div>
+                        <div class="stat-label">Uptime</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clip Grid -->
+        <div class="demo-section">
+            <div class="d-flex justify-content-between align-items-center demo-header">
+                <h2 class="mb-0">Trending Clips</h2>
+                <a href="#" class="text-decoration-none text-gradient fw-bold">View All →</a>
+            </div>
+            
+            <div class="clip-grid">
+                <!-- Clip Card 1 -->
+                <div class="clip-card">
+                    <div class="clip-thumbnail">
+                        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                        <div class="clip-duration">2:34</div>
+                    </div>
+                    <div class="clip-info">
+                        <h5 class="clip-title">Insane 1v5 Clutch in Ranked</h5>
+                        <div class="clip-meta">
+                            <span>👁️ 12.5K</span>
+                            <span>❤️ 892</span>
+                            <span>💬 45</span>
+                        </div>
+                        <div class="mt-2">
+                            <span class="badge badge-primary">Valorant</span>
+                            <span class="badge badge-accent">Ace</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clip Card 2 -->
+                <div class="clip-card">
+                    <div class="clip-thumbnail">
+                        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                        <div class="clip-duration">1:15</div>
+                    </div>
+                    <div class="clip-info">
+                        <h5 class="clip-title">Perfect Speedrun Skip Discovery</h5>
+                        <div class="clip-meta">
+                            <span>👁️ 8.2K</span>
+                            <span>❤️ 654</span>
+                            <span>💬 78</span>
+                        </div>
+                        <div class="mt-2">
+                            <span class="badge badge-primary">Elden Ring</span>
+                            <span class="badge" style="background: var(--sc-success);">Speedrun</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Clip Card 3 -->
+                <div class="clip-card">
+                    <div class="clip-thumbnail">
+                        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                        <div class="clip-duration">0:45</div>
+                    </div>
+                    <div class="clip-info">
+                        <h5 class="clip-title">Epic Rocket League Air Dribble Goal</h5>
+                        <div class="clip-meta">
+                            <span>👁️ 15.1K</span>
+                            <span>❤️ 1.2K</span>
+                            <span>💬 92</span>
+                        </div>
+                        <div class="mt-2">
+                            <span class="badge badge-primary">Rocket League</span>
+                            <span class="badge" style="background: var(--sc-warning);">Goal</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Components Showcase -->
+        <div class="demo-section">
+            <h2 class="demo-header">UI Components</h2>
+            
+            <!-- Buttons -->
+            <div class="mb-4">
+                <h4 class="mb-3">Buttons</h4>
+                <div class="d-flex gap-2 flex-wrap">
+                    <button class="btn btn-primary">Primary</button>
+                    <button class="btn btn-accent">Accent</button>
+                    <button class="btn btn-outline-primary">Outline</button>
+                    <button class="btn btn-ghost">Ghost</button>
+                    <button class="btn btn-primary" disabled>Disabled</button>
+                </div>
+            </div>
+
+            <!-- Game Tags -->
+            <div class="mb-4">
+                <h4 class="mb-3">Game Tags</h4>
+                <div class="d-flex gap-2 flex-wrap">
+                    <a href="#" class="game-tag text-decoration-none">🎮 Valorant</a>
+                    <a href="#" class="game-tag text-decoration-none">⚔️ Elden Ring</a>
+                    <a href="#" class="game-tag text-decoration-none">🚗 Rocket League</a>
+                    <a href="#" class="game-tag text-decoration-none">🔫 CS2</a>
+                    <a href="#" class="game-tag text-decoration-none">🏰 League of Legends</a>
+                </div>
+            </div>
+
+            <!-- Alerts -->
+            <div class="mb-4">
+                <h4 class="mb-3">Alerts</h4>
+                <div class="alert alert-primary">
+                    <strong>New Feature!</strong> You can now upload clips up to 5 minutes long.
+                </div>
+                <div class="alert alert-success">
+                    <strong>Success!</strong> Your clip has been uploaded successfully.
+                </div>
+                <div class="alert alert-danger">
+                    <strong>Error!</strong> Failed to upload clip. Please try again.
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="mb-4">
+                <h4 class="mb-3">Cards</h4>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">Featured Game</div>
+                            <div class="card-body">
+                                <h5 class="card-title text-gradient">Valorant</h5>
+                                <p class="card-text">Watch the latest clips from Valorant players worldwide.</p>
+                                <button class="btn btn-primary btn-sm">Browse Clips</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-game">
+                            <div class="card-body">
+                                <h5 class="card-title">Your Stats</h5>
+                                <p class="card-text">You've uploaded 23 clips this month!</p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge badge-primary badge-glow">Level 12</span>
+                                    <span class="badge" style="background: var(--sc-success);">+250 XP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div style="background: var(--sc-gradient-primary); padding: 1.5rem; border-radius: var(--sc-radius-lg);">
+                            <div class="card glass">
+                                <div class="card-body">
+                                    <h5 class="card-title">Glass Effect</h5>
+                                    <p class="card-text">Modern glassmorphism design for overlays and modals. Notice the blur and transparency!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glassmorphism Showcase -->
+            <div class="mb-4">
+                <h4 class="mb-3">Glassmorphism Effects</h4>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div style="background: var(--sc-gradient-primary); padding: 2rem; border-radius: var(--sc-radius-lg); position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 20%; left: 10%; width: 100px; height: 100px; background: rgba(236, 72, 153, 0.5); border-radius: 50%; filter: blur(40px);"></div>
+                            <div style="position: absolute; bottom: 20%; right: 10%; width: 120px; height: 120px; background: rgba(6, 182, 212, 0.5); border-radius: 50%; filter: blur(40px);"></div>
+                            
+                            <div class="glass" style="padding: 1.5rem; position: relative; z-index: 1;">
+                                <h5>Frosted Glass Card</h5>
+                                <p class="mb-3">This card demonstrates the glassmorphism effect with blur and semi-transparency. The background gradient and blurred shapes show through!</p>
+                                <button class="btn btn-sm" style="background: rgba(255, 255, 255, 0.2); color: white; border: 1px solid rgba(255, 255, 255, 0.3);">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div style="background: var(--sc-gradient-accent); padding: 2rem; border-radius: var(--sc-radius-lg); position: relative; overflow: hidden;">
+                            <div style="position: absolute; top: 30%; left: 20%; width: 80px; height: 80px; background: rgba(139, 92, 246, 0.6); border-radius: 50%; filter: blur(40px);"></div>
+                            <div style="position: absolute; bottom: 30%; right: 20%; width: 100px; height: 100px; background: rgba(99, 102, 241, 0.6); border-radius: 50%; filter: blur(40px);"></div>
+                            
+                            <div class="glass" style="padding: 1.5rem; position: relative; z-index: 1;">
+                                <h5>Overlay Modal</h5>
+                                <p class="mb-3">Perfect for modals, popups, and overlay elements. The frosted effect provides depth while maintaining readability.</p>
+                                <div class="d-flex gap-2">
+                                    <span class="badge" style="background: rgba(255, 255, 255, 0.3); color: white;">Feature</span>
+                                    <span class="badge" style="background: rgba(255, 255, 255, 0.3); color: white;">Modern</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Elements -->
+            <div class="mb-4">
+                <h4 class="mb-3">Forms</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Clip Title</label>
+                            <input type="text" class="form-control" placeholder="Enter clip title...">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Game</label>
+                            <select class="form-select">
+                                <option>Select a game...</option>
+                                <option>Valorant</option>
+                                <option>Elden Ring</option>
+                                <option>Rocket League</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Description</label>
+                            <textarea class="form-control" rows="3" placeholder="Describe your clip..."></textarea>
+                        </div>
+                        <button class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading States -->
+        <div class="demo-section">
+            <h2 class="demo-header">Loading States</h2>
+            <div class="clip-grid">
+                <div class="clip-card">
+                    <div class="clip-thumbnail skeleton"></div>
+                    <div class="clip-info">
+                        <div class="skeleton mb-2" style="height: 20px; width: 80%;"></div>
+                        <div class="skeleton" style="height: 16px; width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="clip-card">
+                    <div class="clip-thumbnail skeleton"></div>
+                    <div class="clip-info">
+                        <div class="skeleton mb-2" style="height: 20px; width: 70%;"></div>
+                        <div class="skeleton" style="height: 16px; width: 50%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5 py-4" style="background: var(--sc-bg-secondary); border-top: 1px solid var(--sc-border);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <img src="snoutclip-logo.png" alt="SnoutClip" style="height: 32px;">
+                        <h5 class="text-gradient mb-0">SnoutClip</h5>
+                    </div>
+                    <p class="text-secondary">Share your epic gaming moments with the world.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none" style="color: var(--sc-text-secondary);">About</a></li>
+                        <li><a href="#" class="text-decoration-none" style="color: var(--sc-text-secondary);">Features</a></li>
+                        <li><a href="#" class="text-decoration-none" style="color: var(--sc-text-secondary);">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Community</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none" style="color: var(--sc-text-secondary);">Discord</a></li>
+                        <li><a href="#" class="text-decoration-none" style="color: var(--sc-text-secondary);">Twitter</a></li>
+                        <li><a href="#" class="text-decoration-none" style="color: var(--sc-text-secondary);">Reddit</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-3" style="border-top: 1px solid var(--sc-border);">
+                <small style="color: var(--sc-text-tertiary);">© 2026 SnoutClip. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Theme Toggle Script -->
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            const themeIcon = document.getElementById('theme-icon');
+            
+            html.setAttribute('data-bs-theme', newTheme);
+            themeIcon.textContent = newTheme === 'light' ? '🌙' : '☀️';
+            
+            // Store preference
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Load saved theme
+        window.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            const themeIcon = document.getElementById('theme-icon');
+            
+            document.documentElement.setAttribute('data-bs-theme', savedTheme);
+            themeIcon.textContent = savedTheme === 'light' ? '🌙' : '☀️';
+        });
+    </script>
+</body>
+</html>
